@@ -1,12 +1,36 @@
+@font-face{
+    font-family:si-bold;
+    src:url('../fonts/SourceHanSansTC-Bold.otf');
+}
+
+@font-face{
+    font-family:si-reg;
+    src:url('../fonts/SourceHanSansTC-Regular.otf');
+}
+
+@font-face{
+    font-family:si-light;
+    src:url('../fonts/SourceHanSansTC-Light.otf');
+}
+.container {
+  position: relative;
+}
+#cal-tabs {
+  height: 55px;
+}
 #cal-tabs a {
+  font-family: si-reg;
   color: #000;
+  text-decoration: none;
+  font-size: 2.2rem;
 }
 #cal-tabs .indicator {
   background-color: #26a69a;
+  height: 7px;
 }
 #cal-tab-1, #cal-tab-2, #cal-tab-3 {
   max-width: 500px;
-  margin: 50px auto;
+  margin: 80px auto;
 }
 [type="checkbox"]+label {
   padding-left: 28px;
