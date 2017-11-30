@@ -12,17 +12,22 @@
     font-family:si-light;
     src:url('../fonts/SourceHanSansTC-Light.otf');
 }
-.container {
-  position: relative;
+a, label, span, p, button {
+  font-family: si-reg;
 }
 #cal-tabs {
   height: 55px;
+  overflow: visible;
 }
-#cal-tabs a {
-  font-family: si-reg;
+#cal-tabs .tab > a {
   color: #000;
   text-decoration: none;
   font-size: 2.2rem;
+  position: relative;
+  overflow: visible;
+}
+#cal-tabs .tab.disabled > a {
+  color: #8e8e8e;
 }
 #cal-tabs .indicator {
   background-color: #26a69a;

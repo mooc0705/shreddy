@@ -28,9 +28,25 @@
   <div class="container">
     <form>
       <ul id="cal-tabs" class="tabs tabs-fixed-width">
-        <li class="tab"><a class="active" href="#cal-tab-1">基础代谢率(BMR)</a></li>
-        <li class="tab"><a href="#cal-tab-2">每日热量消耗</a></li>
-        <li class="tab"><a href="#cal-tab-3">每日热量摄入目标</a></li>
+        <li class="tab">
+          <a class="active" href="#cal-tab-1">基础代谢率(BMR)<span id="bmr" style="
+          position: absolute;
+          bottom: -55px;
+          left: 40%;
+          font-size: 1.5rem;
+          "></span></a>
+
+        </li>
+        <li class="tab disabled">
+          <a href="#cal-tab-2">每日热量消耗<span id="activity" style="
+          position: absolute;
+          bottom: -55px;
+          left: 40%;
+          font-size: 1.5rem;
+          "></span></a>
+
+        </li>
+        <li class="tab disabled"><a href="#cal-tab-3">每日热量摄入目标</a></li>
       </ul>
       <div id="cal-tab-1">
         <div style="text-align: center;">
@@ -41,18 +57,18 @@
         </div>
         <div class="input-field">
           <input id="weight" type="number">
-          <label for="weight">体重</label>
+          <label for="weight">体重(KG)</label>
         </div>
         <div class="input-field">
           <input id="height" type="number">
-          <label for="height">身高</label>
+          <label for="height">身高(CM)</label>
         </div>
         <div class="input-field">
           <input id="age" type="number">
           <label for="age">周岁</label>
         </div>
         <div style="text-align: center;">
-          <button class="btn waves-effect waves-light" type="button" onclick="selectSecond()">下一步</button>
+          <button class="btn waves-effect waves-light disabled" type="button" onclick="selectSecond()">下一步</button>
         </div>
       </div>
       <div id="cal-tab-2">
@@ -73,7 +89,7 @@
           <label for="level-athlete"><a class="tooltipped" data-position="right" data-delay="50" data-tooltip="每周固定7次以上高强度运动，如体能训练，力量训练，柔韧度训练，反应能力 等，是专业运动员的标准">运动员</a></label>
         </p>
         <div style="text-align: center;">
-          <button class="btn waves-effect waves-light" type="button" onclick="selectThird()">下一步</button>
+          <button class="btn waves-effect waves-light disabled" type="button" onclick="selectThird()">下一步</button>
         </div>
       </div>
       <div id="cal-tab-3">
@@ -82,16 +98,6 @@
         </div>
       </div>
     </form>
-    <div id="bmr" style="
-        position: absolute;
-        top: 50px;
-        left: 25%;
-    "></div>
-    <div id="activity" style="
-        position: absolute;
-        top: 50px;
-        left: 48%;
-    "></div>
 
   </div>
 
@@ -105,13 +111,50 @@
       if(window.location.href.indexOf("calculator.php") > -1) {
          $('#calculator .nav-link').addClass('active');
       }
-     });
+    });
+
+    var check1stform = function() {
+      var is_valid = $('#cal-tab-1 input[type!="checkbox"]').map(function() {
+        return !!$(this).val();
+      })
+      .get()
+      .reduce(function(t, n) {
+        return t && n;
+      });
+      if(is_valid && $('#cal-tab-1 input:checked').length) {
+        $('#cal-tab-1 button').removeClass('disabled');
+        $('#cal-tabs .tab:eq(1)').removeClass('disabled');
+      }
+      else {
+        $('#cal-tab-1 button').addClass('disabled');
+        $('#cal-tabs .tab:eq(1)').addClass('disabled');
+      }
+    };
+
+    var check2ndform = function() {
+      if($('#cal-tab-2 input:checked').length) {
+        $('#cal-tab-2 button').removeClass('disabled');
+        $('#cal-tabs .tab:eq(2)').removeClass('disabled');
+      }
+      else {
+        $('#cal-tab-2 button').addClass('disabled');
+        $('#cal-tabs .tab:eq(2)').addClass('disabled');
+      }
+    }
+
     $('#male').on('change', function() {
       $('#female').prop('checked', false);
+      check1stform();
     });
     $('#female').on('change', function() {
       $('#male').prop('checked', false);
+      check1stform();
     });
+    $('#cal-tab-1 input').keyup(check1stform);
+
+    $('#cal-tab-2 input[name="activity"]').on('change', check2ndform);
+
+
     function selectSecond() {
       var weight = parseInt($('#weight').val());
       var height = parseInt($('#height').val());
