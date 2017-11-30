@@ -151,7 +151,6 @@
 
  $(document).ready(function(){
    if(window.location.href.indexOf("material.php") > -1) {
-       console.log('test');
       $('#materials .nav-link').addClass('active');
    }
     $('.grid').hide();
@@ -163,8 +162,8 @@
         $('.material-title').removeClass('active');
         $(i + ' .material-title').addClass('active');
         console.log(val);
-        $(val).siblings().fadeOut(50);
-        $(val).fadeIn(500);
+        $(val).siblings().fadeOut(0);
+        $(val).fadeIn(800);
         
   
       });

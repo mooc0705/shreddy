@@ -322,5 +322,158 @@
 "detail":"维生素B群丰富，口味偏甜，脆，百搭的蔬菜。",
 "endetail":"Great in taste, howev-er little high in fat at 10%. Protein density is higher than breast meat.",
 "img":"carrot"
+},
+{
+"material":"veg",
+"id":"37",
+"cn":"黄瓜",
+"enname":"Drumsticks",
+"detail":"维生素E最为丰富，抗衰老。中式凉菜百搭的蔬菜，清脆爽口。",
+"endetail":"Great in taste, howev-er little high in fat at 10%. Protein density is higher than breast meat.",
+"img":"cucumber"
+},
+{
+"material":"veg",
+"id":"38",
+"cn":"豆芽",
+"enname":"Drumsticks",
+"detail":"膳食纤维丰富，有大量蛋白质。热量低，爽口。",
+"endetail":"Great in taste, howev-er little high in fat at 10%. Protein density is higher than breast meat.",
+"img":"douya"
+},
+{
+"material":"veg",
+"id":"39",
+"cn":"洋葱",
+"enname":"Drumsticks",
+"detail":"有增强免疫力，抗寒，预防心脑血管疾病。烹饪过后味道香甜，是天然的甜味剂。",
+"endetail":"Great in taste, howev-er little high in fat at 10%. Protein density is higher than breast meat.",
+"img":"onion"
+},
+{
+"material":"veg",
+"id":"40",
+"cn":"西葫芦",
+"enname":"Drumsticks",
+"detail":"维他命和微量元素丰富。口感嫩，水分大，热量低。是百搭的西式蔬菜。",
+"endetail":"Great in taste, howev-er little high in fat at 10%. Protein density is higher than breast meat.",
+"img":"zuchhini"
+},
+{
+"material":"veg",
+"id":"41",
+"cn":"茄子",
+"enname":"Drumsticks",
+"detail":"中式餐品的经典。属于海绵体瓜类，搭配多汁的菜品最好。抗衰老，维生素B群丰富。",
+"endetail":"Great in taste, howev-er little high in fat at 10%. Protein density is higher than breast meat.",
+"img":"eggplant"
+},
+{
+"material":"veg",
+"id":"42",
+"cn":"玉米粒",
+"enname":"Drumsticks",
+"detail":"玉米是粗粮的一种，膳食纤维含量高。口感甜，碳水稍多，餐品中用量少。",
+"endetail":"Great in taste, howev-er little high in fat at 10%. Protein density is higher than breast meat.",
+"img":"corn"
+},
+{
+"material":"veg",
+"id":"43",
+"cn":"冷冻杂蔬",
+"enname":"Drumsticks",
+"detail":"豆角，豌豆，玉米粒，胡萝卜块等冷冻熟蔬菜。营养等同于新鲜蔬菜。",
+"endetail":"Great in taste, howev-er little high in fat at 10%. Protein density is higher than breast meat.",
+"img":"frozen-veg"
+},
+{
+"material":"veg",
+"id":"44",
+"cn":"菌类",
+"enname":"Drumsticks",
+"detail":"口感和肉很像，味道鲜，营养丰富，膳食纤维含量高。",
+"endetail":"Great in taste, howev-er little high in fat at 10%. Protein density is higher than breast meat.",
+"img":"junlei"
+},
+{
+"material":"veg",
+"id":"45",
+"cn":"彩椒",
+"enname":"Drumsticks",
+"detail":"维生素综合含量最高。热量低，味道甜脆爽口，是天然甜味剂。",
+"endetail":"Great in taste, howev-er little high in fat at 10%. Protein density is higher than breast meat.",
+"img":"color-pepper"
+},
+{
+"material":"veg",
+"id":"46",
+"cn":"番茄",
+"enname":"Drumsticks",
+"detail":"经典西式蔬菜，用在沙拉，三明治等餐品中。生西红柿营养最完整，热量低，水分大。",
+"endetail":"Great in taste, howev-er little high in fat at 10%. Protein density is higher than breast meat.",
+"img":"tomato"
+},
+{
+"material":"veg",
+"id":"47",
+"cn":"海苔",
+"enname":"Drumsticks",
+"detail":"热量极低，膳食纤维含量比例50%，是所有蔬菜中最多。",
+"endetail":"Great in taste, howev-er little high in fat at 10%. Protein density is higher than breast meat.",
+"img":"sea-grass"
+},
+{
+"material":"veg",
+"id":"48",
+"cn":"木耳",
+"enname":"Drumsticks",
+"detail":"口感脆爽，维生素E含量高，有美白作用。是中餐凉菜中的经典。",
+"endetail":"Great in taste, howev-er little high in fat at 10%. Protein density is higher than breast meat.",
+"img":"muer"
+},
+{
+"material":"veg",
+"id":"49",
+"cn":"草莓",
+"enname":"Drumsticks",
+"detail":"果肉多汁，水果中色香味俱佳者。维生素丰富，膳食纤维含量高。",
+"endetail":"Great in taste, howev-er little high in fat at 10%. Protein density is higher than breast meat.",
+"img":"strawberry"
+},
+{
+"material":"veg",
+"id":"50",
+"cn":"菠萝",
+"enname":"Drumsticks",
+"detail":"营养丰富，果肉非常甜。糖分稍高，在餐品中用量很少。",
+"endetail":"Great in taste, howev-er little high in fat at 10%. Protein density is higher than breast meat.",
+"img":"pinnapple"
+},
+{
+"material":"veg",
+"id":"51",
+"cn":"蓝莓",
+"enname":"Drumsticks",
+"detail":"糖分含量和热量很低，维生素丰富。膳食纤维含量高。",
+"endetail":"Great in taste, howev-er little high in fat at 10%. Protein density is higher than breast meat.",
+"img":"blueberry"
+},
+{
+"material":"veg",
+"id":"52",
+"cn":"奇异果",
+"enname":"Drumsticks",
+"detail":"热量低，营养元素丰富。可以刺激睾丸酮分泌，是健身后的水果首选。",
+"endetail":"Great in taste, howev-er little high in fat at 10%. Protein density is higher than breast meat.",
+"img":"kiwi"
+},
+{
+"material":"veg",
+"id":"52",
+"cn":"香蕉",
+"enname":"Drumsticks",
+"detail":"GI值较低的水果。热量稍高。钾元素含量大，有效分解钠元素摄入过多。",
+"endetail":"Great in taste, howev-er little high in fat at 10%. Protein density is higher than breast meat.",
+"img":"banana"
 }
 ]

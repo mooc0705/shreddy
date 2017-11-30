@@ -21,7 +21,7 @@
     <div class="landing">
         <div class="container-fluid">
              <div class="row">
-                <img class="img-responsive center" src="img/shreddy-logo.png" alt="" width="250"/>
+                <img class="img-responsive center" src="img/shreddy-logo.png" alt="" style="height:100%;" width="250"/>
             </div>
             <div class="row">
                <?php include 'navbar.php'
