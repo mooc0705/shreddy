@@ -5,11 +5,12 @@
 
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav">
+      <!--img src="img/shre" class="img-fluid" width="70"-->
       <li class="nav-item"  id="materials">
         <a class="nav-link" href="material.php">我们的食材</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">我们的餐品</a>
+      <li class="nav-item"  id="menu">
+        <a class="nav-link" href="menu.php">我们的餐品</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">没有我们的日子</a>
