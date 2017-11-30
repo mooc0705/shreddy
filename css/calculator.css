@@ -1,0 +1,14 @@
+#cal-tabs a {
+  color: #000;
+}
+#cal-tabs .indicator {
+  background-color: #26a69a;
+}
+#cal-tab-1, #cal-tab-2, #cal-tab-3 {
+  max-width: 500px;
+  margin: 50px auto;
+}
+[type="checkbox"]+label {
+  padding-left: 28px;
+  margin-right: 25px;
+}

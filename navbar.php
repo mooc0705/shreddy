@@ -14,7 +14,7 @@
       <li class="nav-item">
         <a class="nav-link" href="#">没有我们的日子</a>
       </li>
-       <li class="nav-item">
+       <li class="nav-item" id="calculator">
         <a class="nav-link" href="calculator.php">身体计算器</a>
       </li>
        <li class="nav-item">
@@ -26,4 +26,3 @@
     </ul>
   </div>
 </nav>
-        

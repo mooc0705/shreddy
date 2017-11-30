@@ -1,32 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Starter Template - Materialize</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Shreddy</title>
 
-  <!-- CSS  -->
-  
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 
-  <style media="screen">
-    #cal-tabs a {
-      color: #000;
-    }
-    #cal-tabs .indicator {
-      background-color: #26a69a;
-    }
-    #cal-tab-1, #cal-tab-2,#cal-tab-3 {
-      max-width: 500px;
-      margin: 50px auto;
-    }
-    [type="checkbox"]+label {
-      padding-left: 28px;
-      margin-right: 25px;
-    }
-  </style>
+<link href="css/bootstrap-grid.css" rel="stylesheet" type="text/css"/>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="css/materialize.css">
+<link href="css/calculator.css" rel="stylesheet" type="text/css"/>
+<link href="css/main-nav.css" rel="stylesheet" type="text/css"/>
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+
 </head>
 <body>
   <div class="container-fluid">
@@ -113,7 +100,12 @@
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
   <script type="text/javascript">
-  var bmr = 0;
+    var bmr = 0;
+    $(document).ready(function(){
+      if(window.location.href.indexOf("calculator.php") > -1) {
+         $('#calculator .nav-link').addClass('active');
+      }
+     });
     $('#male').on('change', function() {
       $('#female').prop('checked', false);
     });
