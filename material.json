@@ -263,10 +263,64 @@
 {
 "material":"fat",
 "id":"30",
-"cn":"仿蟹柳",
+"cn":"各类坚果",
 "enname":"Drumsticks",
-"detail":"人工制品，是面粉与蟹肉的结合。口感好，蛋白质丰富。GI值稍高，不作为主食。",
+"detail":"坚果是植物的精华。维生素，微量元素，健康脂肪，蛋白质营养非常丰富。",
 "endetail":"Great in taste, howev-er little high in fat at 10%. Protein density is higher than breast meat.",
-"img":"crab-bar"
+"img":"nuts"
+},
+{
+"material":"fat",
+"id":"31",
+"cn":"各类菜籽油",
+"enname":"Drumsticks",
+"detail":"橄榄油，花生油，葵花籽油，椰油，亚麻籽油，玉米油，芝麻油，菜籽油等优质油脂。在控制热量的前提下可以补充所有人体所需的单不饱和脂肪酸与多不饱和脂肪酸。",
+"endetail":"Great in taste, howev-er little high in fat at 10%. Protein density is higher than breast meat.",
+"img":"oil"
+},
+{
+"material":"fat",
+"id":"32",
+"cn":"深海鱼类",
+"enname":"Drumsticks",
+"detail":"三文鱼，鲑鱼，鲔鱼等深海鱼。天然的鱼油补剂，比深海鱼油胶囊营养更丰富。",
+"endetail":"Great in taste, howev-er little high in fat at 10%. Protein density is higher than breast meat.",
+"img":"sea-fish"
+},
+{
+"material":"fat",
+"id":"33",
+"cn":"蛋黄",
+"enname":"Drumsticks",
+"detail":"鸡蛋的精华，虽然热量稍高，但有大量健康元素。每天1-2颗蛋黄有助于减脂。",
+"endetail":"Great in taste, howev-er little high in fat at 10%. Protein density is higher than breast meat.",
+"img":"egg-yellow"
+},
+{
+"material":"veg",
+"id":"34",
+"cn":"绿叶菜",
+"enname":"Drumsticks",
+"detail":"生菜，白菜，西蓝花，芦笋，菠菜等。含多种微量元素和维生素。",
+"endetail":"Great in taste, howev-er little high in fat at 10%. Protein density is higher than breast meat.",
+"img":"egg-yellow"
+},
+{
+"material":"veg",
+"id":"35",
+"cn":"西芹",
+"enname":"Drumsticks",
+"detail":"膳食纤维最为丰富的蔬菜。热量极低，人体消化西芹所用的热量还不及蔬菜本身。",
+"endetail":"Great in taste, howev-er little high in fat at 10%. Protein density is higher than breast meat.",
+"img":"celery"
+},
+{
+"material":"veg",
+"id":"36",
+"cn":"胡萝卜",
+"enname":"Drumsticks",
+"detail":"维生素B群丰富，口味偏甜，脆，百搭的蔬菜。",
+"endetail":"Great in taste, howev-er little high in fat at 10%. Protein density is higher than breast meat.",
+"img":"carrot"
 }
 ]

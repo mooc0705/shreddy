@@ -79,11 +79,11 @@
   <div id="carbohydrat">
   <div class="row">
   <div id="diamond"></div>
-  <p style="margin-bottom: 0;margin-top: 6px;margin-left: 10px;">为肌肉与筋腱的修复/增长提供营养</p>
+  <p style="margin-bottom: 0;margin-top: 6px;margin-left: 10px;">日常生活最有效的能量来源</p>
 </div>
  <div class="row">
   <div id="diamond"></div>
-  <p style="margin-bottom: 0;margin-top: 6px;margin-left: 10px;">帮助人体生产荷尔蒙与酵素</p>
+  <p style="margin-bottom: 0;margin-top: 6px;margin-left: 10px;">碳水中的膳食纤维可以帮助消化</p>
 </div>
  <div class="row">
   <div id="diamond"></div>
@@ -95,11 +95,11 @@
 <div id="fat">
   <div class="row">
   <div id="diamond"></div>
-  <p style="margin-bottom: 0;margin-top: 6px;margin-left: 10px;">为肌肉与筋腱的修复/增长提供营养</p>
+  <p style="margin-bottom: 0;margin-top: 6px;margin-left: 10px;">单不饱和与多不饱和脂肪酸可以预防心脑血管疾病</p>
 </div>
  <div class="row">
   <div id="diamond"></div>
-  <p style="margin-bottom: 0;margin-top: 6px;margin-left: 10px;">帮助人体生产荷尔蒙与酵素</p>
+  <p style="margin-bottom: 0;margin-top: 6px;margin-left: 10px;">健脑，保持皮肤，促进激素，修复细胞等重要作用</p>
 </div>
  <div class="row">
   <div id="diamond"></div>
@@ -111,15 +111,15 @@
   <div id="veg">
   <div class="row">
   <div id="diamond"></div>
-  <p style="margin-bottom: 0;margin-top: 6px;margin-left: 10px;">为肌肉与筋腱的修复/增长提供营养</p>
+  <p style="margin-bottom: 0;margin-top: 6px;margin-left: 10px;">维生素和微量元素丰富</p>
 </div>
  <div class="row">
   <div id="diamond"></div>
-  <p style="margin-bottom: 0;margin-top: 6px;margin-left: 10px;">帮助人体生产荷尔蒙与酵素</p>
+  <p style="margin-bottom: 0;margin-top: 6px;margin-left: 10px;">热量低，饱腹感强</p>
 </div>
  <div class="row">
   <div id="diamond"></div>
-  <p style="margin-bottom: 0;margin-top: 6px;margin-left: 10px;">热量: 4卡/克</p>
+  <p style="margin-bottom: 0;margin-top: 6px;margin-left: 10px;">拥有大量膳食纤维，帮助消化</p>
 </div>
 </div>
 </div>
@@ -157,13 +157,16 @@
     $('.grid').hide();
 
     var material = {'#material-1':'#protein','#material-2':'#carbohydrat','#material-3':'#fat','#material-4':'#veg','#material-5':'#source'};
+
     jQuery.each(material, function(i,val){
         $(i).click(function(){
         $('.material-title').removeClass('active');
-        $(i + '.material-title').addClass('active');
+        $(i + ' .material-title').addClass('active');
         console.log(val);
-        $('.material-description').fadeIn(300);
+        $(val).siblings().fadeOut(50);
         $(val).fadeIn(500);
+        
+  
       });
 
     });
