@@ -12,7 +12,7 @@
     font-family:si-light;
     src:url('../fonts/SourceHanSansTC-Light.otf');
 }
-a, label, span, p, button {
+a, label, span, p, button, h1, h2, h3, h4, h5, h6, th, td {
   font-family: si-reg;
 }
 #cal-tabs {
@@ -34,10 +34,26 @@ a, label, span, p, button {
   height: 7px;
 }
 #cal-tab-1, #cal-tab-2, #cal-tab-3 {
-  max-width: 500px;
+  max-width: 450px;
   margin: 80px auto;
 }
 [type="checkbox"]+label {
   padding-left: 28px;
   margin-right: 25px;
+}
+
+@media (max-width: 991px) {
+  #cal-tabs .tab > a {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 767px) {
+  #cal-tabs .tab > a {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 575px) {
+  #cal-tabs .tab > a {
+    font-size: 1rem;
+  }
 }

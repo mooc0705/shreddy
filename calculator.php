@@ -92,13 +92,26 @@
           <button class="btn waves-effect waves-light disabled" type="button" onclick="selectThird()">下一步</button>
         </div>
       </div>
-      <div id="cal-tab-3">
-        <div style="text-align: center;">
-          <h4>我的每日热量摄入目标: <strong id="goal"></strong></h4>
+      <div id="cal-tab-3" class="card">
+        <div class="card-content">
+          <div style="text-align: center;">
+            <h5>我的每日热量摄入目标</h5>
+          </div>
+          <table>
+            <tbody>
+              <tr>
+                <th>维持体重所需热量:</th>
+                <td id="maintenance" class="text-right"></td>
+              </tr>
+              <tr>
+                <th>减肥热量目标:</th>
+                <td id="goal" class="text-right"></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </form>
-
   </div>
 
 
@@ -168,6 +181,7 @@
       $('#activity').text(activity);
       $('ul.tabs').tabs('select_tab', 'cal-tab-3');
 
+      $('#maintenance').text(activity);
       $('#goal').text(Math.round(activity * 0.8));
     };
   </script>
